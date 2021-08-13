@@ -1,1 +1,2 @@
 # PlaneWar
+Just a game
