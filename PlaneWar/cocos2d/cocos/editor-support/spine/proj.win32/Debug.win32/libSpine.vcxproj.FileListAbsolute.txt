@@ -1,0 +1,2 @@
+E:\CocosProject\PlaneWar\proj.win32\Debug.win32\libSpine.pdb
+E:\CocosProject\PlaneWar\cocos2d\cocos\editor-support\spine\proj.win32\Debug.win32\libSpine.pdb

@@ -1,0 +1,2 @@
+E:\CocosProject\PlaneWar\proj.win32\Debug.win32\librecast.pdb
+E:\CocosProject\PlaneWar\cocos2d\external\recast\proj.win32\Debug.win32\librecast.pdb

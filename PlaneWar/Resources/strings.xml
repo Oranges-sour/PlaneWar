@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>option_show_highFrame</key>
+        <string>高帧率模式</string>
+
+        <key>option_show_particleQuality</key>
+        <string>特效质量</string>
+
+        <key>game_start</key>
+        <string>开始！</string>
+
+        <key>count_down_timer_mes</key>
+        <string>现在可以使用控制杆，但不会真正移动飞机</string>
+
+
+        <key>lobby_update_money_cost</key>
+        <string>下次升级需要:</string>
+
+        <key>lobby_update_coin</key>
+        <string>金币</string>
+
+        <key>lobby_update_exp</key>
+        <string>级经验</string>
+
+        <key>lobby_exp_str0</key>
+        <string>级</string>
+
+        <key>lobby_full_exp</key>
+        <string>满级</string>
+
+        <key>game_over_full_exp</key>
+        <string>已满级！经验的25%转换为金币</string>
+
+        <!-- 升级上的艺术字>开始 -->
+        <key>lobby_update_attack01_str0</key>
+        <string>攻</string>
+
+        <key>lobby_update_attack01_str1</key>
+        <string>速</string>
+
+        <key>lobby_update_attack02_str0</key>
+        <string>伤</string>
+
+        <key>lobby_update_attack02_str1</key>
+        <string>害</string>
+
+        <key>lobby_update_attack03_str0</key>
+        <string>免</string>
+
+        <key>lobby_update_attack03_str1</key>
+        <string>伤几率</string>
+        <!-- 升级艺术字>结束 -->
+
+        <key>lobby_update_fullLevel</key>
+        <string>已满级!</string>
+
+        <key>wave0</key>
+        <string>第</string>
+
+        <key>wave1</key>
+        <string>波</string>
+
+        <key>wave2</key>
+        <string>敌人数量</string>
+
+        <key>wave3</key>
+        <string>血量累计增加:</string>
+
+        <key>wave4</key>
+        <string>伤害累计增加:</string>
+
+        <key>sub_damage</key>
+        <string>免伤</string>
+
+    </dict>
+</plist>
