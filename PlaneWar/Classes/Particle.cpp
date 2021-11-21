@@ -10,13 +10,6 @@ ParticleOnMove* ParticleOnMove::create(const string& parFrame, float liveTime,
     ParticleOnMove* par = new (std::nothrow) ParticleOnMove();
     if (par && par->initWithSpriteFrameName(parFrame)) {
         par->autorelease();
-
-        auto os = GameManager::getInstance()->getOwnScheduler();
-        auto oa = GameManager::getInstance()->getOwnActionManager();
-
-        par->setScheduler(os);
-        par->setActionManager(oa);
-
         par->initParticle(liveTime, rate);
 
         return par;
@@ -88,12 +81,6 @@ ParticleOnExplode* ParticleOnExplode::create(const string& parFrame,
     ParticleOnExplode* par = new (std::nothrow) ParticleOnExplode();
     if (par && par->initWithSpriteFrameName(parFrame)) {
         par->autorelease();
-
-        auto os = GameManager::getInstance()->getOwnScheduler();
-        auto oa = GameManager::getInstance()->getOwnActionManager();
-
-        par->setScheduler(os);
-        par->setActionManager(oa);
 
         par->initParticle(liveTime, rate);
 

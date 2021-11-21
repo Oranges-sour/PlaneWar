@@ -106,7 +106,7 @@ void HeroSkill_shield::stopSkill()
         shake->setPosition(shield->getPosition());
         GameManager::getInstance()->addSkillEffectChild(shake);
 
-        float time = 1.0f - x * 0.3f;
+        const float time = 1.0f - x * 0.3f;
         auto shakeRun = ScaleTo::create(time, 1.0f);
         auto shakeFade = FadeOut::create(time);
         auto r0 = EaseOut::create(shakeRun, 2.0f);

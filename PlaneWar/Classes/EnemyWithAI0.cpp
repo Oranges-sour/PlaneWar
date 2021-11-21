@@ -22,12 +22,6 @@ EnemyWithAI0* EnemyWithAI0::create(const string& enemy,
         _enemy->setTag(tag_enemy);
         _enemy->addChild(_enemy->AI);
 
-        auto os = GameManager::getInstance()->getOwnScheduler();
-        auto oa = GameManager::getInstance()->getOwnActionManager();
-
-        _enemy->setScheduler(os);
-        _enemy->setActionManager(oa);
-
         _enemy->autorelease();
         return _enemy;
     }

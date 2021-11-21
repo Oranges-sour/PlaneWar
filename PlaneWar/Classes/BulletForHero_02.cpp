@@ -96,13 +96,6 @@ bool BulletForHero_02::init(const vector<string>& particleOnExplode,
     this->b_particleOnExplode = particleOnExplode;
     this->b_particleOnMove = particleOnMove;
     this->setVisible(false);
-
-    auto os = GameManager::getInstance()->getOwnScheduler();
-    auto oa = GameManager::getInstance()->getOwnActionManager();
-
-    this->setScheduler(os);
-    this->setActionManager(oa);
-
     return true;
 }
 
