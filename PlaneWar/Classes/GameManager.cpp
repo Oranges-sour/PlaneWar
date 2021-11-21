@@ -30,7 +30,6 @@ enum _GameManager_zOrder {
     z_others,
     z_enemy,
     z_enemyGroup,
-    z_draw,
     z_hero,
     z_heroPauseShow,
     z_heroCannon,
@@ -345,7 +344,7 @@ void GameManager::updateRedBK()
 void GameManager::updateBar()
 {
     {
-        char str[32] = "";
+        char str[64] = "";
         std::snprintf(str, sizeof(str), "%d / %d", (int)hero->getHitPoint(),
                       (int)hero->getMaxHitPoint());
         bar_label[0]->setString(str);
@@ -355,7 +354,7 @@ void GameManager::updateBar()
     }
 
     {
-        char str[32] = "";
+        char str[64] = "";
         std::snprintf(str, sizeof(str), "%d / %d", (int)hero->getEnergyPoint(),
                       (int)hero->getMaxEnergyPoint());
         bar_label[1]->setString(str);
@@ -365,8 +364,9 @@ void GameManager::updateBar()
     }
 
     {
-        char str[32] = "";
-        std::snprintf(str, sizeof(str), "%d / %d",
+        char str[64] = "";
+        std::snprintf(str, sizeof(str), "(%d) %d / %d",
+                      enemyWaveManager.getWaveCount() + 1,
                       enemyWaveManager.getNowKilled(),
                       enemyWaveManager.getMaxKilled());
         bar_label[2]->setString(str);
@@ -377,39 +377,6 @@ void GameManager::updateBar()
 
 void GameManager::updateEnemySerchRadius()
 {
-    // this->draw->clear();
-
-    auto e = this->enemy_parent->getChildren();
-    for (auto& it : e) {
-        auto enemy = dynamic_cast<basic_Enemy*>(it);
-        if (enemy->getEnemyType() == EnemyType::attack) {
-            auto attackEnemy = dynamic_cast<base_attackEnemy*>(enemy);
-            auto enemyPos = attackEnemy->getPosition();
-            if (!attackEnemy->isInEnemyGroup()) {
-                if (MyMath::distance(enemyPos, hero->getPosition()) <=
-                    attackEnemy->getSerchRadius()) {
-                    attackEnemy->startAttack();
-                } else if (!attackEnemy->isOnAttack()) {
-                    unsigned int s = 0;
-                    switch (MyDefault.option.particleQuality) {
-                        case 0:
-                            s = 30;
-                            break;
-                        case 1:
-                            s = 60;
-                            break;
-                        case 2:
-                            s = 100;
-                            break;
-                    }
-                    this->draw->drawCircle(
-                        enemyPos, attackEnemy->getSerchRadius(), 0.0f, s, false,
-                        Color4F(Color4B(200, 200, 200, 100)));
-                }
-            }
-        }
-    }
-
     auto heroPos = hero->getPosition();
     auto enemyGroups = this->enemyGroup_parent->getChildren();
     for (auto& it : enemyGroups) {
@@ -549,41 +516,11 @@ bool GameManager::init()
     this->addChild(others_parent, _GameManager_zOrder::z_others);
     this->addChild(skillEffect_parent, _GameManager_zOrder::z_skillEffect);
 
-    this->draw = DrawNode::create();
-    this->addChild(draw, _GameManager_zOrder::z_draw);
-
-    this->ownScheduler = new (std::nothrow) Scheduler();
-    this->ownActionManager = new (std::nothrow) ActionManager();
-
-    if (ownScheduler && ownActionManager) {
-        /*ownActionManager->autorelease();
-        ownActionManager->retain();
-
-        ownScheduler->autorelease();
-        ownScheduler->retain();*/
-
-        ownScheduler->setTimeScale(1.0f);
-        //添加自己的Schedule,实现动作慢速 但Director的Schedule不受影响
-        Director::getInstance()->getScheduler()->scheduleUpdate(ownScheduler, 0,
-                                                                false);
-
-        ownScheduler->scheduleUpdate(ownActionManager, 0, false);
-    }
-
     return true;
 }
 
 void GameManager::removeFromParent()
 {
-    if (this->ownScheduler) {
-        Director::getInstance()->getScheduler()->unscheduleUpdate(ownScheduler);
-        ownScheduler->release();
-    }
-
-    if (this->ownActionManager) {
-        ownActionManager->release();
-    }
-
     if (randMap0) {
         delete randMap0;
     }
@@ -971,28 +908,18 @@ vector<basic_Bullet*> GameManager::getEnemyBulletInRange(const Vec2& pos,
 Vec2 GameManager::randomPosInMap()
 {
     Vec2 mapPos = gameMap->getPosition();
-    // Vec2 left_top{ mapPos.x - gameMap->getContentSize().width / 2,
-    //		mapPos.y + gameMap->getContentSize().height / 2
-    //};//地图左上角坐标
 
-    // Vec2 right_bottom{ mapPos.x + gameMap->getContentSize().width / 2,
-    //	mapPos.y - gameMap->getContentSize().height / 2 };//地图右下角坐标
+    const auto px = (*randMap0)();
+    const auto py = (*randMap1)();
 
-    auto randPos = [&]() -> Vec2 {
-        const auto px = [&]() -> float { return (*randMap0)(); }();
-
-        const auto py = [&]() -> float { return (*randMap1)(); }();
-
-        return Vec2(px, py) + mapPos;
-    };
-
-    return randPos();
+    return Vec2(px, py) + mapPos;
 }
 
 Vec2 GameManager::randomPosInMap(const Vec2& pos, float r)
 {
     while (1) {
         auto p1 = this->randomPosInMap();
+        //要在给定的圆之外
         if (MyMath::distance(pos, p1) >= r) {
             return p1;
         }
@@ -1030,32 +957,11 @@ void GameManager::onHeroDie()
     for (size_t x = 0; x < v; ++x) {
         particleOnExplode();
     }
-
-    // this->schedule(
-    //	[&](float)
-    //	{
-    //		if (ownScheduler->getTimeScale() > 0.0f)
-    //		{
-    //			auto frame = Director::getInstance()->getFrameRate();
-    //			this->ownScheduler->setTimeScale(ownScheduler->getTimeScale()
-    //- 0.8f / frame);
-    //		}
-    //		else
-    //		{
-    //			//减少时可能变为负值，要归零
-    //			ownScheduler->setTimeScale(0.0f);
-    //			this->unschedule("downTimeScale");
-    //		}
-    //	}, "downTimeScale");
 }
-
-Scheduler* GameManager::getOwnScheduler() { return ownScheduler; }
-
-ActionManager* GameManager::getOwnActionManager() { return ownActionManager; }
 
 void EnemyWaveManager::enemyDie()
 {
-    int maxEnemyCount = MyDefault.enemyWave.baseEnemyNumbers + waveCount;
+    const int maxEnemyCount = MyDefault.enemyWave.baseEnemyNumbers + waveCount;
 
     //下一波
     if (nowEnemyKilled + 1 == maxEnemyCount) {
@@ -1090,6 +996,8 @@ int EnemyWaveManager::getMaxKilled()
 {
     return MyDefault.enemyWave.baseEnemyNumbers + waveCount;
 }
+
+int EnemyWaveManager::getWaveCount() { return waveCount; }
 
 void EnemyCreater::createEnemies(int enemyNumber, float hitPointAdd,
                                  float damageAdd)

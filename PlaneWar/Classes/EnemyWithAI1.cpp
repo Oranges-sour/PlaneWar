@@ -21,12 +21,6 @@ EnemyWithAI1* EnemyWithAI1::create(const string& enemy,
 {
     auto _enemy = new (std::nothrow) EnemyWithAI1();
     if (_enemy && _enemy->initWithSpriteFrameName(enemy)) {
-        auto os = GameManager::getInstance()->getOwnScheduler();
-        auto oa = GameManager::getInstance()->getOwnActionManager();
-
-        _enemy->setScheduler(os);
-        _enemy->setActionManager(oa);
-
         _enemy->AI = EnemyAI1::create(_enemy);
 
         PhysicsShapeCache::getInstance()->setBodyOnSprite(physicsInfo, _enemy);
@@ -241,11 +235,6 @@ EnemyWithAI1_child* EnemyWithAI1_child::create(const string& enemy,
 {
     auto _enemy = new (std::nothrow) EnemyWithAI1_child();
     if (_enemy && _enemy->initWithSpriteFrameName(enemy)) {
-        auto os = GameManager::getInstance()->getOwnScheduler();
-        auto oa = GameManager::getInstance()->getOwnActionManager();
-
-        _enemy->setScheduler(os);
-        _enemy->setActionManager(oa);
 
         PhysicsShapeCache::getInstance()->setBodyOnSprite(physicsInfo, _enemy);
         _enemy->setTag(tag_enemy);

@@ -44,6 +44,7 @@ public:
     float getProgress();
     int getNowKilled();
     int getMaxKilled();
+    int getWaveCount();
 
 private:
     int waveCount = 0;
@@ -89,7 +90,7 @@ public:
     //创建红血背景
     bool createRedBK(const string& bk_texture);
 
-    //创建血条"框"
+    //创建血条框
     bool createBar(const string& bar_bk, const string& bar_front,
                    const string& hp, const string& ep, const string& progress,
                    const string& font);
@@ -134,15 +135,12 @@ public:
     //在地图上随机一个坐标
     Vec2 randomPosInMap();
 
-    //在地图上随机一个坐标,在所给的点的半径范围外,如果半径大于整个地图大小,函数可能锁死
+    //在地图上随机一个坐标,在所给的点的半径范围外,如果半径大于整个地图大小,函数会锁死
     Vec2 randomPosInMap(const Vec2& pos, float r);
     // enemy(attack_enemy)死亡时调用
     void enemyDie();
     //英雄死亡调用
     void onHeroDie();
-
-    Scheduler* getOwnScheduler();
-    ActionManager* getOwnActionManager();
 
 public:
     //设置是否暂停状态
@@ -203,9 +201,6 @@ private:  // bar相关
     array<LoadingBar*, 3> bar_ui{nullptr};
 
 private:
-    DrawNode* draw = nullptr;
-
-private:
     Node* particle_parent = nullptr;
     Node* bullet_parent = nullptr;
     Node* enemy_parent = nullptr;
@@ -218,8 +213,6 @@ private:
     rand_int* randMap1 = nullptr;
 
 private:
-    Scheduler* ownScheduler = nullptr;
-    ActionManager* ownActionManager = nullptr;
     EnemyWaveManager enemyWaveManager;
     EnemyCreater enemyCreater;
 };

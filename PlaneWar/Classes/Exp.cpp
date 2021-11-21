@@ -19,12 +19,6 @@ Exp* Exp::create(const string& filename, ExpType type,
         _ep->expType = type;
         _ep->setTag(tag_exp);
 
-        auto os = GameManager::getInstance()->getOwnScheduler();
-        auto oa = GameManager::getInstance()->getOwnActionManager();
-
-        _ep->setScheduler(os);
-        _ep->setActionManager(oa);
-
         _ep->init();
 
         _ep->autorelease();
