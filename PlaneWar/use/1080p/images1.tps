@@ -4,7 +4,7 @@
         <key>fileFormatVersion</key>
         <int>4</int>
         <key>texturePackerVersion</key>
-        <string>5.5.0</string>
+        <string>5.3.0</string>
         <key>autoSDSettings</key>
         <array>
             <struct type="AutoSDSettings">
@@ -217,6 +217,22 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
+            <key type="filename">SpriteFrame/game_lobby_update_particle0.png</key>
+            <key type="filename">SpriteFrame/game_lobby_update_particle1.png</key>
+            <struct type="IndividualSpriteSettings">
+                <key>pivotPoint</key>
+                <point_f>0.5,0.5</point_f>
+                <key>spriteScale</key>
+                <double>1</double>
+                <key>scale9Enabled</key>
+                <false/>
+                <key>scale9Borders</key>
+                <rect>9,9,17,17</rect>
+                <key>scale9Paddings</key>
+                <rect>9,9,17,17</rect>
+                <key>scale9FromFile</key>
+                <false/>
+            </struct>
             <key type="filename">SpriteFrame/home_title.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
@@ -270,6 +286,8 @@
             <filename>SpriteFrame/ui_optionBar_show_bk.png</filename>
             <filename>SpriteFrame/enemy_group_circle.png</filename>
             <filename>SpriteFrame/game_lobby_update_effect.png</filename>
+            <filename>SpriteFrame/game_lobby_update_particle0.png</filename>
+            <filename>SpriteFrame/game_lobby_update_particle1.png</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

@@ -8,27 +8,21 @@ using namespace std;
 #include "header/MyDefault.h"
 #include "header/MyMath.h"
 
+constexpr float MAX_DIS = 1e9;
+
 Touch* TouchesPool::getNearest(const Vec2& pos)
 {
     struct {
-        float distance = 0;
+        float distance = MAX_DIS;
         Touch* touch = nullptr;
     } temp;
-    bool firstTime = true;
 
     for (auto it = pool.begin(); it != pool.end(); ++it) {
         auto touch = *it;
-        if (firstTime) {
-            firstTime = false;
-            temp.distance = MyMath::distance(touch->getLocation(), pos);
-            ;
+        float _distance = MyMath::distance(touch->getLocation(), pos);
+        if (_distance < temp.distance) {
+            temp.distance = _distance;
             temp.touch = touch;
-        } else {
-            float _distance = MyMath::distance(touch->getLocation(), pos);
-            if (_distance < temp.distance) {
-                temp.distance = _distance;
-                temp.touch = touch;
-            }
         }
     }
     return temp.touch;
@@ -37,24 +31,16 @@ Touch* TouchesPool::getNearest(const Vec2& pos)
 Touch* TouchesPool::getNearest_start(const Vec2& pos)
 {
     struct {
-        float distance = 0;
+        float distance = MAX_DIS;
         Touch* touch = nullptr;
     } temp;
-    bool firstTime = true;
 
     for (auto it = pool.begin(); it != pool.end(); ++it) {
         auto touch = *it;
-        if (firstTime) {
-            firstTime = false;
-            temp.distance = MyMath::distance(touch->getStartLocation(), pos);
-            ;
+        float _distance = MyMath::distance(touch->getStartLocation(), pos);
+        if (_distance < temp.distance) {
+            temp.distance = _distance;
             temp.touch = touch;
-        } else {
-            float _distance = MyMath::distance(touch->getStartLocation(), pos);
-            if (_distance < temp.distance) {
-                temp.distance = _distance;
-                temp.touch = touch;
-            }
         }
     }
     return temp.touch;
