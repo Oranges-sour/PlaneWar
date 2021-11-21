@@ -25,6 +25,8 @@ public:
 
     CREATE_FUNC(GameLobbyLayer0);
 
+    void particleOnUpdate(const Vec2& pos);
+
 private:
     Sprite* bkground = nullptr;
     Sprite* blackBkground = nullptr;

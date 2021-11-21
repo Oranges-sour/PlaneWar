@@ -3,6 +3,8 @@
 #include "header/GamePage.h"
 #include "header/HomePage.h"
 #include "header/MyDefault.h"
+#include "header/MyMath.h"
+#include "header/Random.h"
 #include "header/UI_Store.h"
 #include "header/XMLManager.h"
 #include "ui/UIRichText.h"
@@ -152,21 +154,7 @@ bool GameLobbyLayer0::init()
             std::snprintf(str, sizeof(str), "%d", MyDefault.gameState.money);
             moneyShow->setString(str);
             //创建特效
-            const auto visibleSize = Director::getInstance()->getVisibleSize();
-            auto sp = Sprite::createWithSpriteFrameName(
-                "game_lobby_update_effect.png");
-            sp->setPosition(update_AttackSpeed->getButtonPos());
-            sp->setScale(0);
-            this->addChild(sp, z_effect);
-            auto a0 = ScaleTo::create(1.0f, 1.0f);
-            auto e0 = EaseOut::create(a0, 1.5f);
-            auto a1 = FadeOut::create(1.0f);
-            auto e1 = EaseOut::create(a1, 1.5f);
-            auto a2 =
-                CallFuncN::create([](Node* node) { node->removeFromParent(); });
-            auto s0 = Spawn::create({e0, e1});
-            auto s = Sequence::create({s0, a2});
-            sp->runAction(s);
+            this->particleOnUpdate(update_AttackSpeed->getButtonPos());
         });
         update_AttackSpeed->refreshInfo();
 
@@ -192,26 +180,13 @@ bool GameLobbyLayer0::init()
             Vec2(301, visibleSize.height - 761));
         update_AttackDamage->setInfoBarPosition(
             Vec2(187, visibleSize.height - 617));
-        update_AttackDamage->setUpdateFinishCallBack([&, update_AttackDamage]() {
+        update_AttackDamage->setUpdateFinishCallBack([&,
+                                                      update_AttackDamage]() {
             char str[32] = "";
             std::snprintf(str, sizeof(str), "%d", MyDefault.gameState.money);
             moneyShow->setString(str);
             //创建特效
-            const auto visibleSize = Director::getInstance()->getVisibleSize();
-            auto sp = Sprite::createWithSpriteFrameName(
-                "game_lobby_update_effect.png");
-            sp->setPosition(update_AttackDamage->getButtonPos());
-            sp->setScale(0);
-            this->addChild(sp, z_effect);
-            auto a0 = ScaleTo::create(1.0f, 1.0f);
-            auto e0 = EaseOut::create(a0, 1.5f);
-            auto a1 = FadeOut::create(1.0f);
-            auto e1 = EaseOut::create(a1, 1.5f);
-            auto a2 =
-                CallFuncN::create([](Node* node) { node->removeFromParent(); });
-            auto s0 = Spawn::create({e0, e1});
-            auto s = Sequence::create({s0, a2});
-            sp->runAction(s);
+            this->particleOnUpdate(update_AttackDamage->getButtonPos());
         });
         update_AttackDamage->refreshInfo();
         MyDefault.updateInfo.attackDamage.nowValue =
@@ -245,22 +220,7 @@ bool GameLobbyLayer0::init()
                               MyDefault.gameState.money);
                 moneyShow->setString(str);
                 //创建特效
-                const auto visibleSize =
-                    Director::getInstance()->getVisibleSize();
-                auto sp = Sprite::createWithSpriteFrameName(
-                    "game_lobby_update_effect.png");
-                sp->setPosition(update_defendSubDamage->getButtonPos());
-                sp->setScale(0);
-                this->addChild(sp, z_effect);
-                auto a0 = ScaleTo::create(1.0f, 1.0f);
-                auto e0 = EaseOut::create(a0, 1.5f);
-                auto a1 = FadeOut::create(1.0f);
-                auto e1 = EaseOut::create(a1, 1.5f);
-                auto a2 = CallFuncN::create(
-                    [](Node* node) { node->removeFromParent(); });
-                auto s0 = Spawn::create({e0, e1});
-                auto s = Sequence::create({s0, a2});
-                sp->runAction(s);
+                this->particleOnUpdate(update_defendSubDamage->getButtonPos());
             });
         update_defendSubDamage->refreshInfo();
         MyDefault.updateInfo.defendSubDamage.nowValue =
@@ -330,4 +290,59 @@ bool GameLobbyLayer0::init()
     //////////////////////////////////////////////
 
     return true;
+}
+
+void GameLobbyLayer0::particleOnUpdate(const Vec2& pos)
+{
+    const auto create0 = [&](float dt) {
+        auto sp =
+            Sprite::createWithSpriteFrameName("game_lobby_update_effect.png");
+        sp->setPosition(pos);
+        sp->setScale(0);
+        this->addChild(sp, z_effect);
+        auto a0 = ScaleTo::create(1.0f, 1.0f);
+        auto e0 = EaseOut::create(a0, 1.5f);
+        auto a1 = FadeOut::create(1.0f);
+        auto e1 = EaseOut::create(a1, 1.5f);
+        auto a2 =
+            CallFuncN::create([](Node* node) { node->removeFromParent(); });
+        auto s0 = Spawn::create({e0, e1});
+        auto d0 = DelayTime::create(dt);
+        auto s = Sequence::create({d0, s0, a2});
+        sp->runAction(s);
+    };
+
+    //粒子特效
+    const auto create1 = [&](const string& frame) {
+        auto sp = Sprite::createWithSpriteFrameName(frame);
+        sp->setPosition(pos);
+        // sp->setScale(0);
+        this->addChild(sp, z_effect);
+
+        rand_float r0(100, 150);
+        rand_int r1(0, 359);
+        const float dis = r0();
+        const float angle = r1();
+        Vec2 p1 = Vec2(dis * DEG::cos(angle), dis * DEG::sin(angle));
+
+        auto a0 = MoveBy::create(1.0f, p1);
+        auto e0 = EaseOut::create(a0, 2);
+        auto a1 = ScaleTo::create(1.0f, 0);
+        auto a2 =
+            CallFuncN::create([](Node* node) { node->removeFromParent(); });
+
+        auto a4 = RotateBy::create(1.0f, 360 * 4);
+        auto a3 = Spawn::create({e0, a1, a4});
+        auto s = Sequence::create({a3, a2});
+        sp->runAction(s);
+    };
+
+    for (int x = 0; x < 2; ++x) {
+        create0(0.05f + x * 0.1f);
+    }
+
+    for (int x = 0; x < 5; ++x) {
+        create1("game_lobby_update_particle0.png");
+        create1("game_lobby_update_particle1.png");
+    }
 }

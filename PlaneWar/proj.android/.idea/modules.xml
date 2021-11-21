@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/PlaneWar.iml" filepath="$PROJECT_DIR$/app/PlaneWar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../cocos2d/cocos/platform/android/libcocos2dx/libcocos2dx.iml" filepath="$PROJECT_DIR$/../cocos2d/cocos/platform/android/libcocos2dx/libcocos2dx.iml" />
       <module fileurl="file://$PROJECT_DIR$/proj.android.iml" filepath="$PROJECT_DIR$/proj.android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/proj.android.PlaneWar.iml" filepath="$PROJECT_DIR$/.idea/modules/app/proj.android.PlaneWar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-241701764/proj.android.libcocos2dx.iml" filepath="$PROJECT_DIR$/.idea/modules/-241701764/proj.android.libcocos2dx.iml" />
     </modules>
   </component>
 </project>
