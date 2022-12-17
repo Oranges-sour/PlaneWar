@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<userDefaultRoot>
+  
+    <option_highFrame>false</option_highFrame>
+
+    <option_particleQuality>0</option_particleQuality>
+
+    <update_attackSpeed_level>0</update_attackSpeed_level>
+
+  <update_attackDamage_level>0</update_attackDamage_level>
+
+    <money>0</money>
+
+  <exp_level>0</exp_level>
+  
+  <exp_value>0</exp_value>
+
+    <isCreateBefor>false</isCreateBefor>
+  
+</userDefaultRoot>

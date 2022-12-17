@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyClasses">
+      <UniqueIdentifier>{a14339fd-4c26-4eca-970a-f6b385d679c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhysicsShapeCache">
+      <UniqueIdentifier>{511bb6d2-5c97-4e36-bbfd-ee28c0b6ef62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyUI">
+      <UniqueIdentifier>{52c5a430-22fd-4283-82fd-cad302976177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\Shader">
+      <UniqueIdentifier>{7d37865e-20a5-4f68-a6ca-56466da5b7e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MyTools">
+      <UniqueIdentifier>{3e50d5e9-7efe-427c-8e60-a8fac1ed38e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects">
+      <UniqueIdentifier>{ee569fb8-7b39-4c5b-b6d0-56019205b24b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Bullet">
+      <UniqueIdentifier>{4ca48863-b006-4eac-8c2a-7b964aa6c215}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Enemy">
+      <UniqueIdentifier>{53b88f2e-b0d9-42ce-9577-5c84abc6724f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObjects\Particle">
+      <UniqueIdentifier>{89aa3759-7712-49f2-9120-99f519c3ebf8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_ClangFormat">
+      <UniqueIdentifier>{dfa3e216-f1fd-40dc-82b4-420a2d10df74}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\basic_Object.cpp">
+      <Filter>MyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameManager.cpp">
+      <Filter>MyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Hero.cpp">
+      <Filter>MyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HitPointBar.cpp">
+      <Filter>MyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Joystick.cpp">
+      <Filter>MyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\ObjectPool.cpp">
+      <Filter>MyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Switch.cpp">
+      <Filter>MyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Weapon.cpp">
+      <Filter>MyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MyMath.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\XMLManager.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI_Option.cpp">
+      <Filter>MyUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UI_Store.cpp">
+      <Filter>MyUI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\PhysicsShapeCache.cpp">
+      <Filter>PhysicsShapeCache</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\base_Page.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameLobby.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameOverPage.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GamePage.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HomePage.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\LoadingPage.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MyDefault.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\OptionPage.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HeroSkill.cpp">
+      <Filter>MyClasses</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Enemy.cpp">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EnemyAI.cpp">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EnemyGroup.cpp">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EnemyWithAI0.cpp">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\EnemyWithAI1.cpp">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Bullet.cpp">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BulletForEnemy0.cpp">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BulletForEnemy1.cpp">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BulletForHero_01.cpp">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BulletForHero_02.cpp">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\BulletForHeroSkill.cpp">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Exp.cpp">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Particle.cpp">
+      <Filter>GameObjects\Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Random.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MyThreads.cpp">
+      <Filter>MyTools</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\basic_Object.h">
+      <Filter>MyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\GameManager.h">
+      <Filter>MyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\Hero.h">
+      <Filter>MyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\HitPointBar.h">
+      <Filter>MyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\Joystick.h">
+      <Filter>MyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\ObjectPool.h">
+      <Filter>MyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\Switch.h">
+      <Filter>MyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\Weapon.h">
+      <Filter>MyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\MyMath.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\XMLManager.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\UI_Option.h">
+      <Filter>MyUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\UI_Store.h">
+      <Filter>MyUI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\PhysicsShapeCache.h">
+      <Filter>PhysicsShapeCache</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\base_Page.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\GameLobby.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\GameOverPage.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\GamePage.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\HomePage.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\LoadingPage.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\MyDefault.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\OptionPage.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\HeroSkill.h">
+      <Filter>MyClasses</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\Enemy.h">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\EnemyAI.h">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\EnemyGroup.h">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\EnemyWithAI0.h">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\EnemyWithAI1.h">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\Bullet.h">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\BulletForEnemy0.h">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\BulletForEnemy1.h">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\BulletForHero_01.h">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\BulletForHero_02.h">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\BulletForHeroSkill.h">
+      <Filter>GameObjects\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\Exp.h">
+      <Filter>GameObjects\Enemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\Particle.h">
+      <Filter>GameObjects\Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\Random.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\header\MyThreads.h">
+      <Filter>MyTools</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\Shader\white.fsh">
+      <Filter>resource\Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\white.vsh">
+      <Filter>resource\Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\light.fsh">
+      <Filter>resource\Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\light.vsh">
+      <Filter>resource\Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\blur.fsh">
+      <Filter>resource\Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\blur.vsh">
+      <Filter>resource\Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\outGlow.fsh">
+      <Filter>resource\Shader</Filter>
+    </None>
+    <None Include="..\Resources\Shader\outGlow.vsh">
+      <Filter>resource\Shader</Filter>
+    </None>
+    <None Include="..\Classes\_clang-format">
+      <Filter>_ClangFormat</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Resources\strings.xml">
+      <Filter>resource</Filter>
+    </Xml>
+    <Xml Include="..\Resources\UserDefault.xml">
+      <Filter>resource</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>
