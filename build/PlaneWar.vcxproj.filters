@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\AppDelegate.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\basic_Object.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\base_Page.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Bullet.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForEnemy0.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForEnemy1.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForHero_01.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForHero_02.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForHeroSkill.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Enemy.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\EnemyAI.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\EnemyGroup.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\EnemyWithAI0.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\EnemyWithAI1.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Exp.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\GameLobby.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\GameManager.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\GameOverPage.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\GamePage.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Hero.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\HeroSkill.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\HitPointBar.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\HomePage.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Joystick.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\LoadingPage.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\MyDefault.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\MyMath.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\ObjectPool.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\OptionPage.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Particle.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\PhysicsShapeCache.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Random.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Switch.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\UI_Option.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\UI_Store.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Weapon.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\XMLManager.cpp">
+      <Filter>Source Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="J:\PlaneWar\PlaneWar\proj.win32\main.cpp">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\AppDelegate.h">
+      <Filter>Source Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\basic_Object.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\base_Page.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Bullet.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForEnemy0.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForEnemy1.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForHero_01.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForHero_02.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForHeroSkill.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Enemy.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\EnemyAI.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\EnemyGroup.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\EnemyWithAI0.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\EnemyWithAI1.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Exp.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\GameLobby.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\GameManager.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\GameOverPage.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\GamePage.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Hero.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\HeroSkill.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\HitPointBar.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\HomePage.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Joystick.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\LoadingPage.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\MyDefault.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\MyMath.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\ObjectPool.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\OptionPage.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Particle.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\PhysicsShapeCache.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Random.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Switch.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\UI_Option.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\UI_Store.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Weapon.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\XMLManager.h">
+      <Filter>Source Files\Classes\header</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\proj.win32\main.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\proj.win32\resource.h">
+      <Filter>Source Files\proj.win32</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\blur.fsh">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\blur.vsh">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\light.fsh">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\light.vsh">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\outGlow.fsh">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\outGlow.vsh">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\white.fsh">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\white.vsh">
+      <Filter>Resources\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\UserDefault.xml">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\bkground_0.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\blackground.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\fonts\font_bold.otf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\fonts\font_medium.otf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\fonts\font_normal.otf">
+      <Filter>Resources\fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_bkground.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_info_bkground.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_lobby_attack_bk.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_lobby_cutLine.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_lobby_defend_bk.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_map.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_over_bk.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_red_bk.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_skill_ctrl_range.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_skill_shield_bk.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_skill_shield_shake.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\home_decorate0.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\images0.plist">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\images0.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\images1.plist">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\images1.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\loading_bkground.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\loading_plane.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\option_info_bkground.png">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\physicsInfo.plist">
+      <Filter>Resources</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="J:\PlaneWar\PlaneWar\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="J:\PlaneWar\PlaneWar\proj.win32\game.rc">
+      <Filter>Source Files\proj.win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{65AA9886-B450-3499-9AE5-ED6423FC0FA4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shader">
+      <UniqueIdentifier>{6DF0458B-341A-3AA2-9F1E-BAF092E843A4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\fonts">
+      <UniqueIdentifier>{3EB719B8-B4C7-3511-8339-BC7FAB6B9AB7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{5E29CDF0-3EE7-3BBF-8788-AC83043B0043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes">
+      <UniqueIdentifier>{7CED7408-B0DE-36E0-968A-2C8B7AE4C2EF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Classes\header">
+      <UniqueIdentifier>{1AA75932-044A-3F8E-914C-2914791D70E0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\proj.win32">
+      <UniqueIdentifier>{8C015F94-536F-3FB7-9E3D-1F678370A35E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

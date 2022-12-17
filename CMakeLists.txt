@@ -49,7 +49,7 @@ endif()
 # add cross-platforms source files and header files
 list(APPEND GAME_SOURCE
     Classes/AppDelegate.cpp
-    Classes/base_Object.cpp
+    Classes/basic_Object.cpp
     Classes/base_Page.cpp
     Classes/Bullet.cpp
     Classes/BulletForEnemy0.cpp
@@ -89,8 +89,7 @@ list(APPEND GAME_SOURCE
      )
 list(APPEND GAME_HEADER
     Classes/AppDelegate.h
-
-    Classes/header/base_Object.h
+    Classes/header/basic_Object.h
     Classes/header/base_Page.h
     Classes/header/Bullet.h
     Classes/header/BulletForEnemy0.h

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x86</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|win32">
+      <Configuration>Debug</Configuration>
+      <Platform>win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6B4EB4EF-27A8-375E-8A22-A586740316CC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>win32</Platform>
+    <ProjectName>PlaneWar</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">J:\PlaneWar\PlaneWar\build\bin\PlaneWar\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">PlaneWar.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">PlaneWar</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>J:\PlaneWar\PlaneWar\Classes;J:\PlaneWar\PlaneWar\cocos2d\cocos\audio\include;J:\PlaneWar\PlaneWar\cocos2d;J:\PlaneWar\PlaneWar\cocos2d\cocos;J:\PlaneWar\PlaneWar\cocos2d\extensions;J:\PlaneWar\PlaneWar\cocos2d\cocos\platform;J:\PlaneWar\PlaneWar\cocos2d\cocos\base;J:\PlaneWar\PlaneWar\cocos2d\cocos\editor-support;J:\PlaneWar\PlaneWar\cocos2d\cocos\platform\win32;J:\PlaneWar\PlaneWar\cocos2d\external\recast\..;J:\PlaneWar\PlaneWar\cocos2d\external\tinyxml2\.;J:\PlaneWar\PlaneWar\cocos2d\external\xxhash\.;J:\PlaneWar\PlaneWar\cocos2d\external\xxtea\.;J:\PlaneWar\PlaneWar\cocos2d\external\clipper\.;J:\PlaneWar\PlaneWar\cocos2d\external\edtaa3func\.;J:\PlaneWar\PlaneWar\cocos2d\external\ConvertUTF\.;J:\PlaneWar\PlaneWar\cocos2d\external\poly2tri\..;J:\PlaneWar\PlaneWar\cocos2d\external\md5\..;J:\PlaneWar\PlaneWar\cocos2d\external\unzip\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/Box2D/include" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/chipmunk/include" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/freetype2/include/win32/freetype2" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/jpeg/include/win32" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/uv/include" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/webp/include/win32" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/bullet/include" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/bullet/include/bullet" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/openssl/include/win32" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/tiff/include/win32" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/websockets/include/win32" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/curl/include/win32" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/png/include/win32" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/sqlite3/include" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/win32-specific/gles/include/OGLES" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/win32-specific/icon/include" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/win32-specific/MP3Decoder/include" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/win32-specific/OggDecoder/include" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/win32-specific/OpenalSoft/include" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/glfw3/include/win32" /external:I "J:/PlaneWar/PlaneWar/cocos2d/external/zlib/../win32-specific/zlib/include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;COCOS2D_DEBUG=1;_WIN32;UNICODE;_UNICODE;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_STATIC;LWS_WITH_LIBUV;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>J:\PlaneWar\PlaneWar\Classes;J:\PlaneWar\PlaneWar\cocos2d\cocos\audio\include;J:\PlaneWar\PlaneWar\cocos2d;J:\PlaneWar\PlaneWar\cocos2d\cocos;J:\PlaneWar\PlaneWar\cocos2d\extensions;J:\PlaneWar\PlaneWar\cocos2d\cocos\platform;J:\PlaneWar\PlaneWar\cocos2d\cocos\base;J:\PlaneWar\PlaneWar\cocos2d\cocos\editor-support;J:\PlaneWar\PlaneWar\cocos2d\cocos\platform\win32;J:\PlaneWar\PlaneWar\cocos2d\external\recast\..;J:\PlaneWar\PlaneWar\cocos2d\external\tinyxml2\.;J:\PlaneWar\PlaneWar\cocos2d\external\xxhash\.;J:\PlaneWar\PlaneWar\cocos2d\external\xxtea\.;J:\PlaneWar\PlaneWar\cocos2d\external\clipper\.;J:\PlaneWar\PlaneWar\cocos2d\external\edtaa3func\.;J:\PlaneWar\PlaneWar\cocos2d\external\ConvertUTF\.;J:\PlaneWar\PlaneWar\cocos2d\external\poly2tri\..;J:\PlaneWar\PlaneWar\cocos2d\external\md5\..;J:\PlaneWar\PlaneWar\cocos2d\external\unzip\.;J:\PlaneWar\PlaneWar\cocos2d\external\Box2D\include;J:\PlaneWar\PlaneWar\cocos2d\external\chipmunk\include;J:\PlaneWar\PlaneWar\cocos2d\external\freetype2\include\win32\freetype2;J:\PlaneWar\PlaneWar\cocos2d\external\jpeg\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\uv\include;J:\PlaneWar\PlaneWar\cocos2d\external\webp\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\bullet\include;J:\PlaneWar\PlaneWar\cocos2d\external\bullet\include\bullet;J:\PlaneWar\PlaneWar\cocos2d\external\openssl\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\tiff\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\websockets\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\curl\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\png\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\sqlite3\include;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\gles\include\OGLES;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\icon\include;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\MP3Decoder\include;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OggDecoder\include;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OpenalSoft\include;J:\PlaneWar\PlaneWar\cocos2d\external\glfw3\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>J:\PlaneWar\PlaneWar\Classes;J:\PlaneWar\PlaneWar\cocos2d\cocos\audio\include;J:\PlaneWar\PlaneWar\cocos2d;J:\PlaneWar\PlaneWar\cocos2d\cocos;J:\PlaneWar\PlaneWar\cocos2d\extensions;J:\PlaneWar\PlaneWar\cocos2d\cocos\platform;J:\PlaneWar\PlaneWar\cocos2d\cocos\base;J:\PlaneWar\PlaneWar\cocos2d\cocos\editor-support;J:\PlaneWar\PlaneWar\cocos2d\cocos\platform\win32;J:\PlaneWar\PlaneWar\cocos2d\external\recast\..;J:\PlaneWar\PlaneWar\cocos2d\external\tinyxml2\.;J:\PlaneWar\PlaneWar\cocos2d\external\xxhash\.;J:\PlaneWar\PlaneWar\cocos2d\external\xxtea\.;J:\PlaneWar\PlaneWar\cocos2d\external\clipper\.;J:\PlaneWar\PlaneWar\cocos2d\external\edtaa3func\.;J:\PlaneWar\PlaneWar\cocos2d\external\ConvertUTF\.;J:\PlaneWar\PlaneWar\cocos2d\external\poly2tri\..;J:\PlaneWar\PlaneWar\cocos2d\external\md5\..;J:\PlaneWar\PlaneWar\cocos2d\external\unzip\.;J:\PlaneWar\PlaneWar\cocos2d\external\Box2D\include;J:\PlaneWar\PlaneWar\cocos2d\external\chipmunk\include;J:\PlaneWar\PlaneWar\cocos2d\external\freetype2\include\win32\freetype2;J:\PlaneWar\PlaneWar\cocos2d\external\jpeg\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\uv\include;J:\PlaneWar\PlaneWar\cocos2d\external\webp\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\bullet\include;J:\PlaneWar\PlaneWar\cocos2d\external\bullet\include\bullet;J:\PlaneWar\PlaneWar\cocos2d\external\openssl\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\tiff\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\websockets\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\curl\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\png\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\sqlite3\include;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\gles\include\OGLES;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\icon\include;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\MP3Decoder\include;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OggDecoder\include;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OpenalSoft\include;J:\PlaneWar\PlaneWar\cocos2d\external\glfw3\include\win32;J:\PlaneWar\PlaneWar\cocos2d\external\zlib\..\win32-specific\zlib\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>lib\Debug\cocos2d.lib;lib\Debug\external.lib;J:\PlaneWar\PlaneWar\cocos2d\external\Box2D\prebuilt\win32\debug\libbox2d.lib;J:\PlaneWar\PlaneWar\cocos2d\external\chipmunk\prebuilt\win32\debug-lib\libchipmunk.lib;J:\PlaneWar\PlaneWar\cocos2d\external\freetype2\prebuilt\win32\freetype.lib;lib\Debug\ext_recast.lib;J:\PlaneWar\PlaneWar\cocos2d\external\jpeg\prebuilt\win32\libjpeg.lib;J:\PlaneWar\PlaneWar\cocos2d\external\webp\prebuilt\win32\libwebp.lib;J:\PlaneWar\PlaneWar\cocos2d\external\bullet\prebuilt\win32\debug\libbullet.lib;J:\PlaneWar\PlaneWar\cocos2d\external\tiff\prebuilt\win32\libtiff.lib;J:\PlaneWar\PlaneWar\cocos2d\external\websockets\prebuilt\win32\websockets.lib;J:\PlaneWar\PlaneWar\cocos2d\external\uv\prebuilt\win32\uv_a.lib;J:\PlaneWar\PlaneWar\cocos2d\external\openssl\prebuilt\win32\libssl.lib;J:\PlaneWar\PlaneWar\cocos2d\external\openssl\prebuilt\win32\libcrypto.lib;lib\Debug\ext_tinyxml2.lib;lib\Debug\ext_xxhash.lib;lib\Debug\ext_xxtea.lib;lib\Debug\ext_clipper.lib;lib\Debug\ext_edtaa3func.lib;lib\Debug\ext_convertUTF.lib;lib\Debug\ext_poly2tri.lib;lib\Debug\ext_md5.lib;J:\PlaneWar\PlaneWar\cocos2d\external\curl\prebuilt\win32\libcurl.lib;J:\PlaneWar\PlaneWar\cocos2d\external\png\prebuilt\win32\libpng.lib;J:\PlaneWar\PlaneWar\cocos2d\external\sqlite3\libraries\win32\sqlite3.lib;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\gles\prebuilt\glew32.lib;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\icon\prebuilt\libiconv.lib;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.lib;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.lib;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.lib;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.lib;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.lib;J:\PlaneWar\PlaneWar\cocos2d\external\glfw3\prebuilt\win32\glfw3.lib;J:\PlaneWar\PlaneWar\cocos2d\external\zlib\..\win32-specific\zlib\prebuilt\libzlib.lib;lib\Debug\ext_unzip.lib;ws2_32.lib;userenv.lib;psapi.lib;winmm.lib;Version.lib;Iphlpapi.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>J:/PlaneWar/PlaneWar/build/Debug/PlaneWar.lib</ImportLibrary>
+      <ProgramDataBaseFile>J:/PlaneWar/PlaneWar/build/bin/PlaneWar/Debug/PlaneWar.pdb</ProgramDataBaseFile>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="J:\PlaneWar\PlaneWar\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">Building Custom Rule J:/PlaneWar/PlaneWar/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">setlocal
+D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SJ:/PlaneWar/PlaneWar -BJ:/PlaneWar/PlaneWar/build --check-stamp-file J:/PlaneWar/PlaneWar/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeCInformation.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeCXXInformation.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeCommonLanguageInclude.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeGenericSystem.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeInitializeConfigs.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeLanguageInformation.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeParseArguments.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeRCInformation.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInformation.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\CMakeSystemSpecificInitialize.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\Compiler\MSVC-C.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\Compiler\MSVC-CXX.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\Compiler\MSVC.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-C.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC-CXX.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\Platform\Windows-MSVC.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\Platform\Windows.cmake;D:\VisualStudio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.24\Modules\Platform\WindowsPaths.cmake;J:\PlaneWar\PlaneWar\Resources\Shader\blur.fsh;J:\PlaneWar\PlaneWar\Resources\Shader\blur.vsh;J:\PlaneWar\PlaneWar\Resources\Shader\light.fsh;J:\PlaneWar\PlaneWar\Resources\Shader\light.vsh;J:\PlaneWar\PlaneWar\Resources\Shader\outGlow.fsh;J:\PlaneWar\PlaneWar\Resources\Shader\outGlow.vsh;J:\PlaneWar\PlaneWar\Resources\Shader\white.fsh;J:\PlaneWar\PlaneWar\Resources\Shader\white.vsh;J:\PlaneWar\PlaneWar\Resources\UserDefault.xml;J:\PlaneWar\PlaneWar\Resources\bkground_0.png;J:\PlaneWar\PlaneWar\Resources\blackground.png;J:\PlaneWar\PlaneWar\Resources\fonts\font_bold.otf;J:\PlaneWar\PlaneWar\Resources\fonts\font_medium.otf;J:\PlaneWar\PlaneWar\Resources\fonts\font_normal.otf;J:\PlaneWar\PlaneWar\Resources\game_bkground.png;J:\PlaneWar\PlaneWar\Resources\game_info_bkground.png;J:\PlaneWar\PlaneWar\Resources\game_lobby_attack_bk.png;J:\PlaneWar\PlaneWar\Resources\game_lobby_cutLine.png;J:\PlaneWar\PlaneWar\Resources\game_lobby_defend_bk.png;J:\PlaneWar\PlaneWar\Resources\game_map.png;J:\PlaneWar\PlaneWar\Resources\game_over_bk.png;J:\PlaneWar\PlaneWar\Resources\game_red_bk.png;J:\PlaneWar\PlaneWar\Resources\game_skill_ctrl_range.png;J:\PlaneWar\PlaneWar\Resources\game_skill_shield_bk.png;J:\PlaneWar\PlaneWar\Resources\game_skill_shield_shake.png;J:\PlaneWar\PlaneWar\Resources\home_decorate0.png;J:\PlaneWar\PlaneWar\Resources\images0.plist;J:\PlaneWar\PlaneWar\Resources\images0.png;J:\PlaneWar\PlaneWar\Resources\images1.plist;J:\PlaneWar\PlaneWar\Resources\images1.png;J:\PlaneWar\PlaneWar\Resources\loading_bkground.png;J:\PlaneWar\PlaneWar\Resources\loading_plane.png;J:\PlaneWar\PlaneWar\Resources\option_info_bkground.png;J:\PlaneWar\PlaneWar\Resources\physicsInfo.plist;J:\PlaneWar\PlaneWar\build\CMakeFiles\3.24.202208181-MSVC_2\CMakeCCompiler.cmake;J:\PlaneWar\PlaneWar\build\CMakeFiles\3.24.202208181-MSVC_2\CMakeCXXCompiler.cmake;J:\PlaneWar\PlaneWar\build\CMakeFiles\3.24.202208181-MSVC_2\CMakeRCCompiler.cmake;J:\PlaneWar\PlaneWar\build\CMakeFiles\3.24.202208181-MSVC_2\CMakeSystem.cmake;J:\PlaneWar\PlaneWar\cocos2d\cmake\Modules\CocosBuildHelpers.cmake;J:\PlaneWar\PlaneWar\cocos2d\cmake\Modules\CocosBuildSet.cmake;J:\PlaneWar\PlaneWar\cocos2d\cmake\Modules\CocosConfigDefine.cmake;J:\PlaneWar\PlaneWar\cocos2d\cmake\Modules\CocosConfigDepend.cmake;J:\PlaneWar\PlaneWar\cocos2d\external\curl\prebuilt\win32\libcurl.dll;J:\PlaneWar\PlaneWar\cocos2d\external\openssl\prebuilt\win32\libcrypto-1_1.dll;J:\PlaneWar\PlaneWar\cocos2d\external\openssl\prebuilt\win32\libssl-1_1.dll;J:\PlaneWar\PlaneWar\cocos2d\external\sqlite3\libraries\win32\sqlite3.dll;J:\PlaneWar\PlaneWar\cocos2d\external\uv\prebuilt\win32\uv.dll;J:\PlaneWar\PlaneWar\cocos2d\external\websockets\prebuilt\win32\websockets.dll;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\MP3Decoder\prebuilt\libmpg123.dll;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OggDecoder\prebuilt\libogg.dll;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbis.dll;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OggDecoder\prebuilt\libvorbisfile.dll;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\OpenalSoft\prebuilt\OpenAL32.dll;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\gles\prebuilt\glew32.dll;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\icon\prebuilt\iconv.dll;J:\PlaneWar\PlaneWar\cocos2d\external\win32-specific\zlib\prebuilt\zlib1.dll;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">J:\PlaneWar\PlaneWar\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\AppDelegate.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\basic_Object.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\base_Page.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Bullet.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForEnemy0.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForEnemy1.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForHero_01.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForHero_02.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\BulletForHeroSkill.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Enemy.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\EnemyAI.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\EnemyGroup.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\EnemyWithAI0.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\EnemyWithAI1.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Exp.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\GameLobby.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\GameManager.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\GameOverPage.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\GamePage.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Hero.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\HeroSkill.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\HitPointBar.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\HomePage.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Joystick.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\LoadingPage.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\MyDefault.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\MyMath.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\ObjectPool.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\OptionPage.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Particle.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\PhysicsShapeCache.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Random.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Switch.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\UI_Option.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\UI_Store.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\Weapon.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Classes\header\XMLManager.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\proj.win32\main.h" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\proj.win32\resource.h" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\AppDelegate.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\basic_Object.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\base_Page.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Bullet.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForEnemy0.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForEnemy1.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForHero_01.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForHero_02.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\BulletForHeroSkill.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Enemy.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\EnemyAI.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\EnemyGroup.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\EnemyWithAI0.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\EnemyWithAI1.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Exp.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\GameLobby.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\GameManager.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\GameOverPage.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\GamePage.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Hero.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\HeroSkill.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\HitPointBar.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\HomePage.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Joystick.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\LoadingPage.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\MyDefault.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\MyMath.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\ObjectPool.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\OptionPage.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Particle.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\PhysicsShapeCache.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Random.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Switch.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\UI_Option.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\UI_Store.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\Weapon.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\Classes\XMLManager.cpp" />
+    <ClCompile Include="J:\PlaneWar\PlaneWar\proj.win32\main.cpp" />
+    <ResourceCompile Include="J:\PlaneWar\PlaneWar\proj.win32\game.rc" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\blur.fsh" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\blur.vsh" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\light.fsh" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\light.vsh" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\outGlow.fsh" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\outGlow.vsh" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\white.fsh" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\Shader\white.vsh" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\UserDefault.xml" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\bkground_0.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\blackground.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\fonts\font_bold.otf" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\fonts\font_medium.otf" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\fonts\font_normal.otf" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_bkground.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_info_bkground.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_lobby_attack_bk.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_lobby_cutLine.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_lobby_defend_bk.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_map.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_over_bk.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_red_bk.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_skill_ctrl_range.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_skill_shield_bk.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\game_skill_shield_shake.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\home_decorate0.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\images0.plist" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\images0.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\images1.plist" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\images1.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\loading_bkground.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\loading_plane.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\option_info_bkground.png" />
+    <ClInclude Include="J:\PlaneWar\PlaneWar\Resources\physicsInfo.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\ZERO_CHECK.vcxproj">
+      <Project>{EA07A84D-4C9C-3C41-92AC-6615ABA81819}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\cocos\core\cocos2d.vcxproj">
+      <Project>{0038AB7F-CD06-3FA7-A871-74AA2F3DEBF3}</Project>
+      <Name>cocos2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\clipper\ext_clipper.vcxproj">
+      <Project>{0EFB4F74-363F-37A9-BA23-EBB0D311A471}</Project>
+      <Name>ext_clipper</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\ConvertUTF\ext_convertUTF.vcxproj">
+      <Project>{851EFC0A-DF30-34DB-867F-3F7B1D2FC7CF}</Project>
+      <Name>ext_convertUTF</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\edtaa3func\ext_edtaa3func.vcxproj">
+      <Project>{1746AB59-84CF-370D-8B61-96902005576D}</Project>
+      <Name>ext_edtaa3func</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\md5\ext_md5.vcxproj">
+      <Project>{D9E1A91D-EFAB-37E2-A0E6-D1E0B2C61D93}</Project>
+      <Name>ext_md5</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\poly2tri\ext_poly2tri.vcxproj">
+      <Project>{150BF046-F4A0-372E-BA0E-26FC9884DC9E}</Project>
+      <Name>ext_poly2tri</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\recast\ext_recast.vcxproj">
+      <Project>{14221B82-D3C2-36A6-BAE4-989914753F4C}</Project>
+      <Name>ext_recast</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\tinyxml2\ext_tinyxml2.vcxproj">
+      <Project>{24A3814E-706A-3F92-915B-5EC7194F941A}</Project>
+      <Name>ext_tinyxml2</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\unzip\ext_unzip.vcxproj">
+      <Project>{A2C7E4D5-C66E-3B25-8A80-EE18B352F04B}</Project>
+      <Name>ext_unzip</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\xxhash\ext_xxhash.vcxproj">
+      <Project>{E7C072B1-B04C-332D-A2CF-6A57731B8BE4}</Project>
+      <Name>ext_xxhash</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\xxtea\ext_xxtea.vcxproj">
+      <Project>{8F714F45-3AFB-309F-A212-E59BBA85B264}</Project>
+      <Name>ext_xxtea</Name>
+    </ProjectReference>
+    <ProjectReference Include="J:\PlaneWar\PlaneWar\build\engine\external\external.vcxproj">
+      <Project>{127943A3-C284-3797-B797-1EE4A0B882C0}</Project>
+      <Name>external</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

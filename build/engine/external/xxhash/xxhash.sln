@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CMakePredefinedTargets", "CMakePredefinedTargets", "{17717283-D71C-3FC6-A883-44C721CB2701}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "External", "External", "{6F9F2B3D-92AB-392B-8A2B-92D494DDF8AC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ALL_BUILD", "ALL_BUILD.vcxproj", "{399295DA-2933-3ACE-A89C-12171C0F3F9C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA07A84D-4C9C-3C41-92AC-6615ABA81819} = {EA07A84D-4C9C-3C41-92AC-6615ABA81819}
+		{E7C072B1-B04C-332D-A2CF-6A57731B8BE4} = {E7C072B1-B04C-332D-A2CF-6A57731B8BE4}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ZERO_CHECK", "..\..\..\\ZERO_CHECK.vcxproj", "{EA07A84D-4C9C-3C41-92AC-6615ABA81819}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ext_xxhash", "ext_xxhash.vcxproj", "{E7C072B1-B04C-332D-A2CF-6A57731B8BE4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EA07A84D-4C9C-3C41-92AC-6615ABA81819} = {EA07A84D-4C9C-3C41-92AC-6615ABA81819}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|win32 = Debug|win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{399295DA-2933-3ACE-A89C-12171C0F3F9C}.Debug|win32.ActiveCfg = Debug|win32
+		{EA07A84D-4C9C-3C41-92AC-6615ABA81819}.Debug|win32.ActiveCfg = Debug|win32
+		{EA07A84D-4C9C-3C41-92AC-6615ABA81819}.Debug|win32.Build.0 = Debug|win32
+		{E7C072B1-B04C-332D-A2CF-6A57731B8BE4}.Debug|win32.ActiveCfg = Debug|win32
+		{E7C072B1-B04C-332D-A2CF-6A57731B8BE4}.Debug|win32.Build.0 = Debug|win32
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{399295DA-2933-3ACE-A89C-12171C0F3F9C} = {17717283-D71C-3FC6-A883-44C721CB2701}
+		{EA07A84D-4C9C-3C41-92AC-6615ABA81819} = {17717283-D71C-3FC6-A883-44C721CB2701}
+		{E7C072B1-B04C-332D-A2CF-6A57731B8BE4} = {6F9F2B3D-92AB-392B-8A2B-92D494DDF8AC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4EFEEC53-629E-3657-9DC8-27E5B2781321}
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
